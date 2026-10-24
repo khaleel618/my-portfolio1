@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    color: #93c5fd;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:focus-visible {
+    outline: 3px solid #0f172a;
+    outline-offset: 3px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: #1e293b;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+nav a:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.project-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+.status {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+#theme-button {
+    margin-top: 20px;
+}
+
+body.dark-mode {
+    background-color: #020617;
+    color: #e2e8f0;
+}
+
+body.dark-mode section {
+    background-color: #0f172a;
+}
+
+body.dark-mode h2 {
+    color: #93c5fd;
+}
+
+body.dark-mode .project-card {
+    background-color: #1e293b;
+    border-color: #475569;
+}
+
+body.dark-mode .project-card h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode footer {
+    color: #cbd5e1;
+}
+
+body.dark-mode button:focus-visible {
+    outline-color: #93c5fd;
+}
+.contact-link {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    background-color: #1d4ed8;
+}
+
+.contact-link:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+@media (max-width: 600px) {
+    header {
+        padding: 40px 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+    }
+}
+#project-form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#project-form input,
+#project-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #64748b;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+    color: #0f172a;
+}
+
+#project-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#project-form button {
+    justify-self: start;
+}
+#project-search {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #64748b;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+    color: #0f172a;
+}
+
+.project-card[hidden] {
+    display: none;
+}

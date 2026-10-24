@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaleel Ahmed | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Khaleel Ahmed</h1>
+        <p>IT Instructor & Aspiring Web Developer</p>
+        <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#goal">My Goal</a>
+    <a href="#contact">Contact</a>
+</nav>
+<button id="theme-button" type="button" aria-pressed="false">
+    Enable Dark Mode
+</button>
+
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am learning to build professional websites.
+                This is my first website.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Teaching</li>
+                <li>IT Support</li>
+                <li>Learning Web Development</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </section>
+
+        
+          <section id="goal">
+    <h2>My Goal</h2>
+
+    <p id="goal-message">
+        Build useful websites for businesses and institutions.
+    </p>
+
+    <button id="goal-button" type="button">
+        Show My Next Step
+    </button>
+</section>
+        </section>
+        <section id="projects">
+    <h2>My Projects</h2>
+    <p>Projects I am building during my learning journey.</p>
+    <form id="project-form">
+    <label for="project-title">Project Name</label>
+    <input
+        id="project-title"
+        type="text"
+        placeholder="Example: Library System"
+        maxlength="80"
+        required
+    >
+
+    <label for="project-description">Description</label>
+    <textarea
+        id="project-description"
+        placeholder="What will this project do?"
+        maxlength="300"
+        required
+    ></textarea>
+
+    <button type="submit">Add Project</button>
+    <p id="project-feedback" role="status"></p>
+</form>
+<label for="project-search">Search Projects</label>
+<input
+    id="project-search"
+    type="search"
+    placeholder="Type a project name..."
+>
+<p id="search-feedback" role="status"></p>    
+
+    <div class="project-grid">
+        <article class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>A website introducing my skills and goals.</p>
+            <span class="status">In Progress</span>
+        </article>
+
+        <article class="project-card">
+            <h3>Student Attendance System</h3>
+            <p>A future project for managing student attendance.</p>
+            <span class="status">Planned</span>
+        </article>
+
+        <article class="project-card">
+            <h3>News Portal</h3>
+            <p>A future website for publishing news and articles.</p>
+            <span class="status">Planned</span>
+        </article>
+    </div>
+    <p id="no-projects" hidden>
+    No matching projects. Try another name.
+</p>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project or a question? Send me an email.</p>
+
+    <a class="contact-link" href="khaleelahmedpersonal.com">
+        Email Me
+    </a>
+</section>
+    </main>
+
+    <footer>
+    <p>
+        &copy; <span id="current-year"></span>
+        Khaleel Ahmed. All rights reserved.
+    </p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
